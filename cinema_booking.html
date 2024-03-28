@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Description on my website tab -->
+    <title>Cinema Booking</title>
+    <!-- Getting the styles of my page from the styles.css file -->
+    <link rel="stylesheet" href="css/booking_form.css" />
+  </head>
+  <body>
+    <!-- Creating the container that will contain the form -->
+    <div class="popup">
+      <!-- Creating the close button -->
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <!-- Creating the form with its input requirements such as name, last name,
+        email address, movie, tickets quantity, date and submit button-->
+        <form action="">
+          <div class="form-element">
+            <label for="fname">First name:</label><br />
+            <input type="text" id="fname" /><br /><br />
+          </div>
+
+          <div class="form-element">
+            <label for="lname">Last name:</label><br />
+            <input type="text" id="lname" /><br /><br />
+          </div>
+
+          <div class="form-element">
+            <label for="eaddress">Email address:</label><br />
+            <input type="email" id="eaddress" /><br /><br />
+          </div>
+
+          <div class="form-element">
+            <label for="movie">Movie:</label><br />
+            <select id="movie" name="movie" class="drop-down">
+              <option value="Avatar">Avatar</option>
+              <option value="I Am Legend">I Am Legend</option>
+              <option value="300">300</option>
+              <option value="The Avengers">The Avengers</option>
+              <option value="The Wolf of Wall Street">
+                The Wolf of Wall Street
+              </option>
+              <option value="Interestellar">Interestellar</option>
+              <option value="Game of Thrones">Game of Thrones</option>
+              <option value="Vikings">Vikings</option>
+              <option value="Gotham">Gotham</option>
+              <option value="Power">Power</option>
+              <option value="Narcos">Narcos</option>
+              <option value="Breaking Bad">Breaking Bad</option>
+              <option value="Doctor Strange">Doctor Strange</option>
+              <option value="Rogue One: A Star Wars Story">
+                Rogue One: A Star Wars Story
+              </option>
+              <option value="Assassin's Creed">Assassin's Creed</option>
+              <option value="Luke Cage">Luke Cage</option></select
+            ><br /><br />
+          </div>
+
+          <div class="form-element">
+            <label for="tickets">Tickets:</label><br />
+            <input type="number" id="tickets" min="1" max="10" /><br /><br />
+          </div>
+
+          <div class="form-element">
+            <label for="date">Date:</label><br />
+            <input type="date" id="date" /><br /><br />
+          </div>
+
+          <div class="form-element">
+            <button id="submit" value="Submit">Submit</button><br /><br />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
